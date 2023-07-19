@@ -15,8 +15,8 @@ contract ArithmeticOperationTest is Test {
     function testadd() public {
         arithmeticoperation.add();
         assertEq(
-            arithmeticoperation._firstnumber() +
-                arithmeticoperation._secondnumber(),
+            arithmeticoperation.firstnumber() +
+                arithmeticoperation.secondnumber(),
             6
         );
     }
