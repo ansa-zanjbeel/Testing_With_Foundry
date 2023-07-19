@@ -14,4 +14,9 @@ contract ArithmeticOperation {
         uint256 addition = firstnumber + secondnumber;
         return addition;
     }
+
+    function sub() public view returns (uint256) {
+        uint256 substraction = firstnumber - secondnumber;
+        return substraction;
+    }
 }
