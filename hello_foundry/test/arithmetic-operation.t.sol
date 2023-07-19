@@ -15,8 +15,8 @@ contract ArithmeticOperationTest is Test {
     function testadd() public {
         arithmeticoperation.add();
         assertEq(
-            arithmeticoperation.firstnumber() +
-                arithmeticoperation.secondnumber(),
+            arithmeticoperation._firstnumber() +
+                arithmeticoperation._secondnumber(),
             6
         );
     }
@@ -24,8 +24,8 @@ contract ArithmeticOperationTest is Test {
     function testsub() public {
         arithmeticoperation.sub();
         assertEq(
-            arithmeticoperation.firstnumber() -
-                arithmeticoperation.secondnumber(),
+            arithmeticoperation._firstnumber() -
+                arithmeticoperation._secondnumber(),
             2
         );
     }
@@ -33,8 +33,8 @@ contract ArithmeticOperationTest is Test {
     function testmul() public {
         arithmeticoperation.mul();
         assertEq(
-            arithmeticoperation.firstnumber() *
-                arithmeticoperation.secondnumber(),
+            arithmeticoperation._firstnumber() *
+                arithmeticoperation._secondnumber(),
             8
         );
     }
@@ -42,8 +42,8 @@ contract ArithmeticOperationTest is Test {
     function testdiv() public {
         arithmeticoperation.div();
         assertEq(
-            arithmeticoperation.firstnumber() /
-                arithmeticoperation.secondnumber(),
+            arithmeticoperation._firstnumber() /
+                arithmeticoperation._secondnumber(),
             2
         );
     }
