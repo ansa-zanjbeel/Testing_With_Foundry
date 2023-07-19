@@ -29,4 +29,22 @@ contract ArithmeticOperationTest is Test {
             2
         );
     }
+
+    function testmul() public {
+        arithmeticoperation.mul();
+        assertEq(
+            arithmeticoperation.firstnumber() *
+                arithmeticoperation.secondnumber(),
+            8
+        );
+    }
+
+    function testdiv() public {
+        arithmeticoperation.div();
+        assertEq(
+            arithmeticoperation.firstnumber() /
+                arithmeticoperation.secondnumber(),
+            2
+        );
+    }
 }

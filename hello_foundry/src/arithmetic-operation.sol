@@ -19,4 +19,14 @@ contract ArithmeticOperation {
         uint256 substraction = firstnumber - secondnumber;
         return substraction;
     }
+
+    function mul() public view returns (uint256) {
+        uint256 multiplication = firstnumber * secondnumber;
+        return multiplication;
+    }
+
+    function div() public view returns (uint256) {
+        uint256 division = firstnumber / secondnumber;
+        return division;
+    }
 }
