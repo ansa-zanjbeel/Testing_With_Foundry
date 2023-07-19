@@ -20,4 +20,13 @@ contract ArithmeticOperationTest is Test {
             6
         );
     }
+
+    function testsub() public {
+        arithmeticoperation.sub();
+        assertEq(
+            arithmeticoperation.firstnumber() -
+                arithmeticoperation.secondnumber(),
+            2
+        );
+    }
 }
