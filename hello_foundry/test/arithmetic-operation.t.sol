@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import "../src/arithmetic-operation.sol";
+import "../src/2-arithmetic-operation.sol";
 
 contract ArithmeticOperationTest is Test {
     ArithmeticOperation public arithmeticoperation;
