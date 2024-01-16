@@ -9,6 +9,6 @@ contract Error {
     }
 
     function throwCustomError() external {
-        revert NotAuthorized;
+        revert NotAuthorized();
     }
 }
