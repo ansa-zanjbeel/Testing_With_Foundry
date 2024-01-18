@@ -28,6 +28,7 @@ Try running some of the following tasks:
 - A good practice is to use the pattern `test_Revert[If|When]_Condition` in combination with the expectRevert cheatcode. so that we know exactly what reverted and with which error.
 - cheatcodes `https://book.getfoundry.sh/forge/cheatcodes`
 - other testing practices `https://book.getfoundry.sh/tutorials/best-practices`
+- we can also use shared setups by creating `helper abstract contracts` and inheriting them in your test contracts.
 
 ```
 ⚠️ Note: Test functions must have either external or public visibility. Functions declared as internal or private won't be picked up by Forge, even if they are prefixed with test.
