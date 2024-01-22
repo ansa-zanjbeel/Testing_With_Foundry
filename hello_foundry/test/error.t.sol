@@ -7,7 +7,7 @@ import "../src/3-error.sol";
 contract ErrorTest is Test {
     Error public error;
 
-    function setup() public {
+    function setUp() public {
         error = new Error();
     }
 
