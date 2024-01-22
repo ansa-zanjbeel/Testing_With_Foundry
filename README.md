@@ -7,20 +7,28 @@ Try running some of the following tasks:
 ```bash
 
   (installation)
-* curl -L https://foundry.paradigm.xyz | bash
-
-* forge init hello_foundry
-* forge build (compile)
-* forge test (test)
-* forge test --match-path test/helloworld.t.sol (specific contract test)
-* forge test -vvv (verbosity)
-* forge test --match-path test/helloworld.t.sol --gas-report (gas report)
-* forge remappings (to know what lib u installed)
-
+- curl -L https://foundry.paradigm.xyz | bash
+- forge init hello_foundry
+- forge build (compile)
+- forge test (test)
+- forge test --match-path test/helloworld.t.sol (specific contract test)
+- forge test -vvv (verbosity)
+- forge test --match-path test/helloworld.t.sol --gas-report (gas report)
+- forge remappings (to know what lib u installed)
 
 ```
 
+```
+       Verbosity levels:
+          - 2: Print logs for all tests
+          - 3: Print execution traces for failing tests
+          - 4: Print execution traces for all tests, and setup traces for failing tests
+          - 5: Print execution and setup traces for all tests
+```
+
 ## Foundry_Book
+
+**Writing Tests**
 
 - setUp: An optional function invoked before each test case is run.
 - test: Functions prefixed with test are run as a test case.
@@ -31,9 +39,22 @@ Try running some of the following tasks:
 - we can also use shared setups by creating `helper abstract contracts` and inheriting them in your test contracts.
 
 ```
+
 ⚠️ Note: Test functions must have either external or public visibility. Functions declared as internal or private won't be picked up by Forge, even if they are prefixed with test.
+
 ```
 
 ```
-💡 Tip:  Use the getCode cheatcode to deploy contracts with incompatible Solidity versions.
+
+💡 Tip: Use the getCode cheatcode to deploy contracts with incompatible Solidity versions.
+
+```
+
+**CheatCodes**
+
+- read more about cheatcodes
+  `https://book.getfoundry.sh/forge/cheatcodes`
+
+```
+
 ```
