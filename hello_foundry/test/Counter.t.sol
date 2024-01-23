@@ -28,7 +28,14 @@ contract CounterTest is Test {
         assertEq(counter.number(), x);
     } */
 
+    //a way to chk failing test
     function testFailDecrement() public {
+        counter.decrement();
+    }
+
+    //another way
+    function testDecrementUnderFlow() public {
+        vm.expectRevert(stdError.arithmeticError);
         counter.decrement();
     }
 }
