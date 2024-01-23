@@ -28,6 +28,13 @@ contract CounterTest is Test {
         assertEq(counter.number(), x);
     } */
 
+    function testDecrement() public {
+        counter.increment();
+        counter.increment();
+        counter.decrement();
+        assertEq(counter.number(), 1);
+    }
+
     //a way to chk failing test
     function testFailDecrement() public {
         counter.decrement();
