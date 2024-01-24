@@ -1,8 +1,8 @@
 # Testing_With_Foundry
 
-This project demonstrates foundry testing.
+**This Project demonstrates Foundry Testing**
 
-Try running some of the following tasks:
+- Try running some of the following tasks:
 
 ```bash
 
@@ -25,6 +25,12 @@ Try running some of the following tasks:
           - 4: Print execution traces for all tests, and setup traces for failing tests
           - 5: Print execution and setup traces for all tests
 ```
+
+**Remapping | Testing With Foundry**
+
+- forge install rari-capital/solmate
+- forge update lib/solmate (for update)
+- forge remove solmate
 
 ## Foundry_Book
 

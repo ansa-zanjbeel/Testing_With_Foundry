@@ -1,0 +1,3 @@
+//how-to-import-openzeppelin-in-file//
+
+@openzeppelin/=node_modules/@openzeppelin
