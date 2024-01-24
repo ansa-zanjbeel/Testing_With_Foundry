@@ -60,7 +60,13 @@
 
 - read more about cheatcodes
   `https://book.getfoundry.sh/forge/cheatcodes`
+- the prank cheatcode can change our identity to the zero address
+
+**Forge Standard Library Overview**
 
 ```
-
+- Vm.sol: Up-to-date cheatcodes interface
+- console.sol and console2.sol: Hardhat-style logging functionality
+- Script.sol: Basic utilities for Solidity scripting
+- Test.sol: A superset of DSTest containing standard libraries, a cheatcodes instance (vm), and Hardhat console
 ```
