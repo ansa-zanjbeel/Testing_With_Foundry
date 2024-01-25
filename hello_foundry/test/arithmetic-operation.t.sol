@@ -14,37 +14,21 @@ contract ArithmeticOperationTest is Test {
 
     function testadd() public {
         arithmeticoperation.add();
-        assertEq(
-            arithmeticoperation._firstnumber() +
-                arithmeticoperation._secondnumber(),
-            6
-        );
+        assertEq(arithmeticoperation._firstnumber() + arithmeticoperation._secondnumber(), 6);
     }
 
     function testsub() public {
         arithmeticoperation.sub();
-        assertEq(
-            arithmeticoperation._firstnumber() -
-                arithmeticoperation._secondnumber(),
-            2
-        );
+        assertEq(arithmeticoperation._firstnumber() - arithmeticoperation._secondnumber(), 2);
     }
 
     function testmul() public {
         arithmeticoperation.mul();
-        assertEq(
-            arithmeticoperation._firstnumber() *
-                arithmeticoperation._secondnumber(),
-            8
-        );
+        assertEq(arithmeticoperation._firstnumber() * arithmeticoperation._secondnumber(), 8);
     }
 
     function testdiv() public {
         arithmeticoperation.div();
-        assertEq(
-            arithmeticoperation._firstnumber() /
-                arithmeticoperation._secondnumber(),
-            2
-        );
+        assertEq(arithmeticoperation._firstnumber() / arithmeticoperation._secondnumber(), 2);
     }
 }

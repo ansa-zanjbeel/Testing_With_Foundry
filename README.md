@@ -15,7 +15,7 @@
 - forge test -vvv (verbosity)
 - forge test --match-path test/helloworld.t.sol --gas-report (gas report)
 - forge remappings (to know what lib u installed)
-
+- forge fmt (formatter)
 ```
 
 ```
