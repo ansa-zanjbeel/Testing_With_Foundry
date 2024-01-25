@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "forge-std/console.sol";
+//import "forge-std/console.sol";
 
 contract Counter {
     uint256 public number;
@@ -11,7 +11,7 @@ contract Counter {
     }
 
     function increment() public {
-        console.log("Here", number);
+        //console.log("Here", number);
         ++number;
     }
 
