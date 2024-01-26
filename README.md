@@ -64,9 +64,32 @@
 
 **Forge Standard Library Overview**
 
-```
 - Vm.sol: Up-to-date cheatcodes interface
 - console.sol and console2.sol: Hardhat-style logging functionality
 - Script.sol: Basic utilities for Solidity scripting
 - Test.sol: A superset of DSTest containing standard libraries, a cheatcodes instance (vm), and Hardhat console
+
 ```
+// Access Hevm via the `vm` instance
+vm.startPrank(alice);
+
+// Assert and log using Dappsys Test
+assertEq(dai.balanceOf(alice), 10000e18);
+
+// Log with the Hardhat `console` (`console2`)
+console.log(alice.balance);
+
+// Use anything from the Forge Std std-libraries
+deal(address(dai), alice, 10000e18);
+```
+
+**Standard libraries**
+
+Forge Std currently consists of six standard libraries.
+
+- Std Logs
+- Std Assertions
+- Std Cheats
+- Std Errors
+- Std Storage
+- Std Math
