@@ -93,3 +93,17 @@ Forge Std currently consists of six standard libraries.
 - Std Errors
 - Std Storage
 - Std Math
+
+**Std Logs**
+Std Logs expand upon the logging events from the DSTest library.
+
+**Std Assertions**
+Std Assertions expand upon the assertion functions from the DSTest library.
+
+**Std Cheats**
+Std Cheats are wrappers around Forge cheatcodes that make them safer to use and improve the DX.
+You can access Std Cheats by simply calling them inside your test contract, as you would any other internal function
+
+**Std Errors**
+Std Errors provide wrappers around common internal Solidity errors and reverts.
+Std Errors are most useful in combination with the expectRevert cheatcode, as you do not need to remember the internal Solidity panic codes yourself. Note that you have to access them through stdError, as this is a library.
