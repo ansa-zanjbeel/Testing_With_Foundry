@@ -15,4 +15,10 @@ contract AuthTest is Test {
         wallet.setOwner(address(1));
         assertEq(wallet.owner(), address(1));
     }
+
+    function testFailNotOwner() public {
+        vm.prank(address(1));
+        wallet.setOwner(address(1));
+        // assertEq(wallet.owner(), address(1));
+    }
 }
